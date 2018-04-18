@@ -1,0 +1,236 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+body {
+  color: #5a5a5a;
+}
+p, p.lead {
+  font-weight: 200;
+}
+
+/* 'main' is the wrapper of the whole content of the page */
+/*  The padding on top is for the size of the navbar */
+nav.navbar {
+  height: 60px;
+  padding: 0 4rem;
+}
+nav.navbar .mr-auto, .mx-auto {
+  margin-right: 0 !important;
+  margin-left: auto!important;
+}
+nav.navbar .nav-link {
+  font-weight: 100;
+}
+nav.navbar .navbar-brand {
+  font-weight: bold;
+}
+main {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding-top: 60px;
+}
+.container {
+  max-width: 1400px;
+  width: calc(100% - 8rem);
+  margin-left: 4rem;
+  margin-right: 4rem;
+  padding: 0;
+}
+
+/* Carousel
+-------------------------------------------------- */
+/* Carousel base class */
+/* Here you can change the size of the carousel */
+/* Tip about using rem: it is a ratio based on your default font-size. */
+/* In this case, rem has a 16px ratio, i.e. 1.5rem = 1.5 * 16px = 24px */
+.carousel {
+  margin-bottom: 4rem;
+  width: 100%;
+  height: 80%;
+}
+.carousel-inner {
+  height: 100%;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+  top: 20%;
+  width: 50%;
+}
+
+/* Mask for darkness. You can change the color for the mask */
+.mask {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 0;
+  z-index: 1;
+  left: 0;
+}
+/* This is for each item inside the carousel (including the image in the background) */
+/* To modify the image, look at this element in the HTML, it has a background-image for each item */
+.carousel-item {
+  height: 32rem;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+}
+/* Bump up size of carousel content */
+.carousel-caption p {
+  margin-bottom: 1.25rem;
+  font-size: 1.25rem;
+  line-height: 1.4;
+}
+
+
+/* Circles
+------------------------- */
+/* Center align the text within the three columns below the carousel */
+.rounded-circle {
+  margin-bottom: 50px;
+}
+.marketing .col-lg-4 {
+  margin-bottom: 1.8rem;
+  text-align: center;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  min-height: 200px;
+}
+.marketing .col-lg-4 div{
+  height: 100%;
+}
+.marketing h2 {
+  font-weight: 400;
+}
+.marketing .col-lg-4 p {
+  margin-right: .75rem;
+  margin-left: .75rem;
+}
+
+
+/* Featurettes
+------------------------- */
+.featurette-divider {
+  margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+}
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -.05rem;
+  margin-top: 7rem;
+  font-size: 50px;
+}
+.featurette-image-div {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+/* This defines the size of the featurette CONTENT. It will auto-adjust automatically. */
+.featurette .col-md-7 div{
+  width: calc(100% - 1.5rem);
+  margin: 0 auto;
+}
+.featurette p {
+  margin: 0;
+}
+
+/* Responsive CSS
+-------------------------------------------------- */
+/* All Tablet and Mobile */
+@media (max-width: 1200px) {
+  .carousel-caption {
+    top: 20%;
+    width: 70%;
+  }
+}
+/* Tablet Landscape */
+@media (max-width: 1200px) and (min-width: 740px) and (orientation: Landscape) {
+  .carousel {
+    height: 80%;
+  }
+}
+/* Tablet Portrait */
+@media (max-width: 1200px) and (min-width: 740px) and (orientation: Portrait) {
+  .carousel {
+    height: 70%;
+  }
+  .marketing a{
+    margin-bottom: 60px;
+  }
+  .rounded-circle {
+    margin-bottom: 20px;
+  }
+  .marketing .col-lg-4 div {
+    margin-bottom: 10px;
+  }
+  .marketing .col-lg-4 div {
+    height: 75%;
+  }
+}
+/* Mobile */
+@media (max-width: 739px) {
+  .featurette-image-div {
+      height: 25vh;
+      margin-top: 30px;
+  }
+  .container {
+    max-width: 1400px;
+    width: calc(100% - 4rem);
+    margin-left: 2rem;
+    margin-right: 2rem;
+    padding: 0;
+  }
+  nav.navbar {
+    padding: 0 1rem;
+  }
+  .carousel {
+    height: 80%;
+  }
+  .carousel-caption {
+    position: absolute;
+    top: auto;
+    bottom: 10%;
+  }
+  .carousel-caption h1{
+    font-size: 2rem;
+  }
+  .carousel-caption p{
+    font-size: 0.8rem;
+  }
+  .carousel-caption a{
+    font-size: 0.8rem;
+  }
+  .marketing a{
+    margin-bottom: 75px;
+  }
+  .marketing .col-lg-4 div {
+    height: 85%;
+  }
+  .rounded-circle {
+    margin-bottom: 20px;
+  }
+  .featurette-heading {
+    margin-top: 0;
+    font-size: 35px;
+  }
+  .featurette .col-md-7 div {
+    width: 100%;
+    margin: 0 auto;
+  }
+  div.navbar-collapse {
+    position: absolute;
+    top: 60px;
+    width: 100%;
+    background-color: inherit;
+    padding: 0.5rem 1rem;
+    left: 0;
+  }
+  .navbar-dark .navbar-toggler {
+    border-color: 0;
+  }
+}
