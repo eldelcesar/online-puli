@@ -37,7 +37,25 @@ main {
   margin-right: 4rem;
   padding: 0;
 }
-
+.main-block{
+  position: relative;
+  height: 80vh;
+  width: 100vw;
+  background-size: cover;
+  background-position: bottom;
+  margin-bottom: calc(20vh - 60px);
+}
+.main-block h1{
+  position: absolute;
+  top: 35%;
+  left: 5%;
+  font-size: 100px;
+  color: #fff;
+  z-index: 1;
+}
+.special-margin {
+  margin-top: 60px;
+}
 /* Carousel
 -------------------------------------------------- */
 /* Carousel base class */
@@ -62,8 +80,8 @@ main {
 /* Mask for darkness. You can change the color for the mask */
 .mask {
   position: absolute;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   top: 0;
   z-index: 1;
@@ -90,6 +108,8 @@ main {
 ------------------------- */
 /* Center align the text within the three columns below the carousel */
 .rounded-circle {
+  width: 140px;
+  height: 140px;
   margin-bottom: 50px;
 }
 .marketing .col-lg-4 {
