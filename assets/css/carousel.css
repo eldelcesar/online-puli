@@ -29,10 +29,12 @@ main {
   width: 100%;
   height: 100%;
 
+
   padding-top: 0px;
   padding-left: 0px;
   padding-right: 0px;
 }
+
 
 .container {
   max-width: 1400px;
@@ -59,7 +61,10 @@ main {
 }
 .special-margin {
 
+
   margin-top: 250px;
+
+}
 
 /* Carousel
 -------------------------------------------------- */
